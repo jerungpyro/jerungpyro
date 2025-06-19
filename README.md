@@ -13,6 +13,7 @@ I'm a final year Netcentric student with a strong foundation in both backend and
 
 - **Languages:** HTML, PHP, Java, Kotlin, JavaScript, Dart (Flutter)
 - **Frameworks:** Laravel, Flutter
+- **Other Skills:** API Integration, Firebase
 - **Areas of Focus:** Pentesting, Vulnerability Scanning, Web Development, Mobile Development
 
 ## Professional Interests
