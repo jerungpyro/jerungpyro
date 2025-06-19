@@ -2,7 +2,7 @@
 
 ## About Me
 
-I'm a final year Netcentric student with a strong foundation in both backend and frontend development. My top programming languages include **HTML**, **PHP**, **Java**, **Kotlin**, **JavaScript**, **Flutter**, and **Laravel**. Currently, I'm focusing mainly on security aspects of software development, but my passion for coding keeps me building random apps—web and mobile alike.
+I'm a final year Netcentric student with a strong foundation in both backend and frontend development. My top programming languages include **HTML**, **PHP**, **Java**, **Kotlin**, **JavaScript**, **Flutter**, and **Laravel**. Right now, I'm focusing on security topics like **pentesting** and **vulnerability scanning**—but my passion for coding keeps me building random apps, web and mobile alike.
 
 ## Projects
 
@@ -13,11 +13,11 @@ I'm a final year Netcentric student with a strong foundation in both backend and
 
 - **Languages:** HTML, PHP, Java, Kotlin, JavaScript, Dart (Flutter)
 - **Frameworks:** Laravel, Flutter
-- **Areas of Focus:** Application Security, Web Development, Mobile Development
+- **Areas of Focus:** Pentesting, Vulnerability Scanning, Web Development, Mobile Development
 
 ## Professional Interests
 
-- Application and web security practices
+- Application and web security (pentesting, vulnerability scanning)
 - Building scalable and maintainable codebases
 - Exploring new technologies and frameworks
 - Developing user-centric web and mobile applications
