@@ -8,6 +8,8 @@ I'm a final year Netcentric student with a strong foundation in both backend and
 
 - **Dividend Calculator App** — A financial tool for calculating investment dividends with ease.
 - **EV Charger Finder** — A mobile/web application to locate electric vehicle charging stations efficiently.
+- **Food Truck Finder** — A mobile/web application to locate food truck efficiently.
+- **EV Charger Finder** — A task manager application - combination of larave and flutter based code.
 
 ## Skills
 
