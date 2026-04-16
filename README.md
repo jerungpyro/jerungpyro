@@ -1,50 +1,65 @@
-# Jerung Pyro
+# Hi, I'm Jerung Pyro 👋
+
+Final-year Netcentric student building practical web, mobile, and backend projects with a strong interest in security-focused development.
 
 ## About Me
 
-I'm a final year Netcentric student with a strong foundation in both backend and frontend development. My top programming languages include **HTML**, **PHP**, **Java**, **Kotlin**, **JavaScript**, **Dart (Flutter)**, and **C++**.
+- 🎓 Final-year Netcentric student
+- 📱 Building cross-platform apps with Flutter and Firebase
+- 🌐 Developing backend systems with Laravel and REST APIs
+- 🔐 Interested in pentesting, vulnerability scanning, and secure application design
+- 🚀 Always exploring ways to turn academic work into polished, usable products
 
-## Projects
+## Featured Projects
 
-### 🚀 Latest Projects
+### 🚨 [CampusResQ](https://github.com/jerungpyro/RESQ)
+A campus issue-reporting mobile app built with Flutter and Firebase that supports photo uploads, GPS-based reporting, role-based access, and real-time status tracking for students and administrators.
 
-- **[RESQ](https://github.com/jerungpyro/RESQ)** — Emergency response and rescue application.
-- **[ICPROM-25](https://github.com/jerungpyro/ICPROM-25)** — Conference/event management project.
-- **[Task-Manager-Dart-Laravel](https://github.com/jerungpyro/Task-Manager-Dart-Laravel)** — A task manager application combining Laravel backend with Flutter frontend.
-- **[Crypto Value Tracker](https://github.com/jerungpyro/crypto_value_tracker)** — Track cryptocurrency values and portfolio.
-- **[Task Manager API](https://github.com/jerungpyro/task-manager-api-latest)** — RESTful API for task management.
+### 🚚 [FoodTruck Finder](https://github.com/jerungpyro/foodtruck_finder)
+A crowdsourced mobile cloud computing project with a Flutter app and admin web panel for discovering, submitting, verifying, and managing food truck locations in real time.
 
-### 📱 Mobile & Web Apps
+### 📋 [Task Manager - Flutter & Laravel](https://github.com/jerungpyro/Task-Manager-Dart-Laravel)
+A full-stack task management system combining a Flutter frontend with a Laravel backend, featuring CRUD operations, priority tracking, due dates, and a web dashboard.
 
-- **[Dividend Calculator App](https://github.com/jerungpyro/Dividend-Calc-App)** — A financial tool for calculating investment dividends with ease.
-- **[EV Charger Finder](https://github.com/jerungpyro/ev_charger_finder)** — A mobile/web application to locate electric vehicle charging stations efficiently.
-- **[Food Truck Finder](https://github.com/jerungpyro/foodtruck_finder)** — A mobile/web application to locate food trucks efficiently.
-- **[Tic Tac Toe](https://github.com/jerungpyro/tictactoe)** — Classic tic-tac-toe game implementation.
+### 💹 [Crypto Value Tracker](https://github.com/jerungpyro/crypto_value_tracker)
+A cryptocurrency tracking application focused on monitoring real-time prices, watchlists, and market visibility for multiple digital assets.
 
-### 📚 Academic & Learning
+### 📝 [Task Manager API](https://github.com/jerungpyro/task-manager-api-latest)
+A RESTful task management API project built to support clean backend workflows and API-driven application development.
 
-- **[OOP Assignments](https://github.com/jerungpyro/OOP-ASSIGNMENTS)** — Object-Oriented Programming coursework and projects.
-- **[CPP Assignments](https://github.com/jerungpyro/CPP-ASSIGNMENTS)** — C++ programming assignments and exercises.
+## Other Projects
 
-### 🌐 Portfolio
+- ⚡ [EV Charger Finder](https://github.com/jerungpyro/ev_charger_finder) — Location-based app for finding EV charging stations
+- 💰 [Dividend Calculator App](https://github.com/jerungpyro/Dividend-Calc-App) — Simple financial calculator for dividend planning
+- 🎮 [Tic Tac Toe](https://github.com/jerungpyro/tictactoe) — Classic game project
+- 📚 [ICPROM-25](https://github.com/jerungpyro/ICPROM-25) — Mock exam solutions and learning materials
+- 🎓 [OOP Assignments](https://github.com/jerungpyro/OOP-ASSIGNMENTS) — Object-oriented programming coursework
+- 💻 [CPP Assignments](https://github.com/jerungpyro/CPP-ASSIGNMENTS) — C++ exercises and academic practice
+- 🌍 [Personal Website](https://github.com/jerungpyro/jerungpyro.github.io) — Personal portfolio site
 
-- **[Personal Website](https://github.com/jerungpyro/jerungpyro.github.io)** — My personal portfolio website.
+## Tech Stack
 
-## Skills
+**Languages**  
+HTML, PHP, Java, Kotlin, JavaScript, Dart, C++
 
-- **Languages:** HTML, PHP, Java, Kotlin, JavaScript, Dart (Flutter), C++
-- **Frameworks:** Laravel, Flutter
-- **Other Skills:** API Integration, Firebase, RESTful APIs
-- **Areas of Focus:** Pentesting, Vulnerability Scanning, Web Development, Mobile Development
+**Frameworks & Tools**  
+Flutter, Laravel, Firebase, MySQL, REST APIs, Google Maps Platform
 
-## Professional Interests
+**Focus Areas**  
+Web development, mobile development, backend systems, application security
 
-- Application and web security (pentesting, vulnerability scanning)
-- Building scalable and maintainable codebases
-- Exploring new technologies and frameworks
-- Developing user-centric web and mobile applications
-- Cryptocurrency and financial technology
+## Current Interests
+
+- Building real-world mobile and web platforms
+- Designing cleaner and more maintainable APIs
+- Improving UI/UX in student and community-focused apps
+- Expanding practical skills in security testing and vulnerability assessment
+- Exploring fintech and location-based solutions
+
+## Connect
+
+- GitHub: [@jerungpyro](https://github.com/jerungpyro)
 
 ---
 
-_Always eager to learn, adapt, and deliver robust solutions._
+_Always learning, building, and improving._
