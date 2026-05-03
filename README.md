@@ -1,4 +1,4 @@
-# Hi, I'm Jerung Pyro 👋
+# Hi, I'm Bad 👋
 
 Final-year Netcentric student building practical web, mobile, and backend projects with a strong interest in security-focused development.
 
