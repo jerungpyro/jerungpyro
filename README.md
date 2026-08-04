@@ -4,18 +4,13 @@
 
 <br>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0B1D2A?style=for-the-badge&logo=linkedin&logoColor=A8DADC&labelColor=123047)](https://www.linkedin.com/in/badrulakasyah)
-[![Instagram](https://img.shields.io/badge/Instagram-0B1D2A?style=for-the-badge&logo=instagram&logoColor=FF6B35&labelColor=123047)](https://www.instagram.com/badrul_38)
-[![Email](https://img.shields.io/badge/Email-0B1D2A?style=for-the-badge&logo=gmail&logoColor=FFD166&labelColor=123047)](mailto:bakasyah@gmail.com)
-![Profile views](https://komarev.com/ghpvc/?username=jerungpyro&style=for-the-badge&color=FF6B35&label=SIGHTINGS)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0B1D2A?style=for-the-badge&logo=linkedin&logoColor=A8DADC&labelColor=123047)](https://www.linkedin.com/in/badrulakasyah) [![Instagram](https://img.shields.io/badge/Instagram-0B1D2A?style=for-the-badge&logo=instagram&logoColor=FF6B35&labelColor=123047)](https://www.instagram.com/badrul_38) [![Email](https://img.shields.io/badge/Email-0B1D2A?style=for-the-badge&logo=gmail&logoColor=FFD166&labelColor=123047)](mailto:bakasyah@gmail.com) ![Profile views](https://komarev.com/ghpvc/?username=jerungpyro&style=for-the-badge&color=FF6B35&label=SIGHTINGS)
 
 <br>
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=22&duration=2600&pause=900&color=FF6B35&center=true&vCenter=true&width=620&height=52&lines=Software+Engineer;mobile+%C2%B7+backend+%C2%B7+security;I+ship+things+that+people+actually+use" alt="Software Engineer — mobile, backend, security — I ship things that people actually use">
 
 </div>
-
----
 
 ## ▸ SURFACING NOW
 
@@ -28,8 +23,6 @@
 **[Task Manager](https://github.com/jerungpyro/Task-Manager-Dart-Laravel)** — full-stack task management: Flutter frontend, Laravel backend, web dashboard, priorities and due dates.
 `Flutter` `Laravel` `MySQL` `REST`
 
----
-
 ## ▸ WHAT I BUILD WITH
 
 **Languages** — TypeScript, JavaScript, Dart, Python, PHP, Java, Kotlin, C++, HTML
@@ -41,7 +34,7 @@
 ---
 
 <details>
-<summary><b>▾ Deeper waters</b> — five more repositories</summary>
+<summary><b>Deeper waters</b> — five more repositories</summary>
 
 <br>
 
@@ -53,13 +46,11 @@
 
 </details>
 
----
-
 ## ▸ THE NUMBERS
 
 <div align="center">
 
-<img src="https://streak-stats.demolab.com/?user=jerungpyro&background=0B1D2A&border=1E5F74&stroke=1E5F74&ring=FF6B35&fire=FF6B35&currStreakNum=A8DADC&sideNums=A8DADC&currStreakLabel=FF6B35&sideLabels=A8DADC&dates=A8DADC" alt="Contribution streak for jerungpyro — total contributions, current streak and longest streak">
+<img src="https://streak-stats.demolab.com/?user=jerungpyro&background=0B1D2A&border=1E5F74&stroke=1E5F74&ring=FF6B35&fire=FF6B35&currStreakNum=A8DADC&sideNums=A8DADC&currStreakLabel=FF6B35&sideLabels=A8DADC&dates=A8DADC&disable_animations=true" alt="Contribution streak for jerungpyro — total contributions, current streak and longest streak">
 
 <br><br>
 

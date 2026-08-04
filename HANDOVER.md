@@ -3,22 +3,32 @@
 This folder will become **`github.com/jerungpyro/jerungpyro`** — the special repo whose
 `README.md` renders on the GitHub profile page. It is not related to any other project.
 
-## State: design approved, nothing built yet
+## State: built (2026-08-04)
 
-- `docs/DESIGN.md` — the full approved spec. **Read this first.**
+All three deliverables exist and `python tools/check_profile.py --links` passes.
+
+- `docs/DESIGN.md` — the approved spec. **Read this first.**
+- `docs/superpowers/plans/2026-08-04-github-profile-readme.md` — the implementation
+  plan, amended in place with what changed during execution and why.
 - `docs/old-readme-source.md` — the previous plain README. Source of project
   descriptions and links only; its framing is outdated (see below).
-- `assets/` and `.github/workflows/` — created empty, ready for `banner.svg` and
-  `snake.yml`.
+- `tools/check_profile.py` — dev-only verification. Run it after any edit.
 
-## Next step
+The three open questions below were answered before building: stack gains React,
+TypeScript, Python, FastAPI **and Capacitor**; the drafted taglines were kept; the
+featured/collapsed project split was confirmed as designed.
 
-Create the implementation plan from `docs/DESIGN.md` (superpowers `writing-plans`),
-then build the three deliverables:
+## Known follow-up
 
-1. `README.md`
-2. `assets/banner.svg` — hand-authored animated SVG
-3. `.github/workflows/snake.yml` — the single GitHub Action
+The design's stats widgets (`github-readme-stats`, `github-profile-trophy`) are both
+dead — the Vercel deployments return `DEPLOYMENT_PAUSED` and `DEPLOYMENT_DISABLED`.
+They were replaced with `streak-stats.demolab.com` and
+`github-readme-activity-graph`, both live and themable to the full palette. The
+top-languages card and trophy row are the casualties; self-hosting either project on
+a personal Vercel account brings them back with the same query params. Details in the
+plan's Task 5.
+
+The snake image 404s until the Action has run once — trigger it from the Actions tab.
 
 ## Facts the design depends on
 

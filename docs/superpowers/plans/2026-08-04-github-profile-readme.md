@@ -630,35 +630,58 @@ git commit -m "feat: add featured projects, stack and collapsed deeper-waters se
 - Consumes: the sections from Task 4.
 - Produces: the stats block — `github-readme-stats` and top-languages side by side in a two-column table, trophies full width beneath.
 
-**Note on the trophy widget:** `github-profile-trophy` does not accept arbitrary hex the way `github-readme-stats` does; it takes preset theme names. `theme=darkhub` with `no-frame=true` gives a dark card that reads correctly under both GitHub themes, which is what the "renders correctly in light and dark" criterion requires. Do **not** add `no-bg=true` — that makes the card transparent and its light text vanishes on GitHub's light theme.
+> **Amended during execution — the designed widgets are dead.** Step 2 below was run
+> as written and both services specified in `docs/DESIGN.md` §5 returned hard errors,
+> twice, with a browser User-Agent:
+>
+> | Service | Result |
+> |---|---|
+> | `github-readme-stats.vercel.app` | HTTP 503 `DEPLOYMENT_PAUSED` |
+> | `github-profile-trophy.vercel.app` | HTTP 402 `DEPLOYMENT_DISABLED` (Payment required) |
+>
+> These are not rate limits or transient blips — the deployments are paused and
+> disabled. Shipping them would put three broken-image icons in the middle of a README
+> whose entire stated priority is visual impact, so they were replaced with two
+> services that are live **and** accept the full palette as explicit hex, which is what
+> the design actually asked for ("themed via explicit colour params rather than a
+> preset theme name"):
+>
+> - `streak-stats.demolab.com` — total contributions, current streak, longest streak.
+>   Verified honouring `0B1D2A`, `1E5F74`, `A8DADC`, `FF6B35`. Same maintainer host as
+>   the typing SVG already in use.
+> - `github-readme-activity-graph.vercel.app` — contribution activity line chart.
+>   Verified honouring all five, including `FFD166` on the data points.
+>
+> `disable_animations=true` is set on the streak card: its numbers fade in via CSS, and
+> a renderer that freezes at frame zero shows an *empty* card. That is the same
+> "must degrade correctly if animation is stripped" rule the banner follows.
+>
+> **What was lost:** the top-languages breakdown and the trophy row. Both need
+> `github-readme-stats` / `github-profile-trophy`. The way to get them back is to
+> deploy either project to the owner's own Vercel account (both are open source and
+> free to host) and swap the hostname in the two URLs — the query params are unchanged.
+> A third-party mirror of `github-readme-stats` was found alive during this task and
+> deliberately **not** used: pointing a public profile at an anonymous fork means an
+> unvetted party serves images to everyone who views it, and can change them at will.
+>
+> An unrelated checker fix belongs here too: LinkedIn answers every non-browser request
+> with HTTP 999 (anti-bot). The link is fine; `check_links` now treats 999 from
+> `linkedin.com` as a pass instead of a false failure.
 
 - [ ] **Step 1: Append the stats block**
 
 Append to `README.md`:
 
 ```markdown
----
-
 ## ▸ THE NUMBERS
 
 <div align="center">
 
-<table>
-<tr>
-<td>
+<img src="https://streak-stats.demolab.com/?user=jerungpyro&background=0B1D2A&border=1E5F74&stroke=1E5F74&ring=FF6B35&fire=FF6B35&currStreakNum=A8DADC&sideNums=A8DADC&currStreakLabel=FF6B35&sideLabels=A8DADC&dates=A8DADC&disable_animations=true" alt="Contribution streak for jerungpyro — total contributions, current streak and longest streak">
 
-<img src="https://github-readme-stats.vercel.app/api?username=jerungpyro&show_icons=true&hide_border=true&bg_color=0B1D2A&title_color=FF6B35&text_color=A8DADC&icon_color=FFD166&ring_color=FF6B35" alt="GitHub statistics for jerungpyro">
+<br><br>
 
-</td>
-<td>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jerungpyro&layout=compact&hide_border=true&langs_count=8&bg_color=0B1D2A&title_color=FF6B35&text_color=A8DADC" alt="Most-used languages for jerungpyro">
-
-</td>
-</tr>
-</table>
-
-<img src="https://github-profile-trophy.vercel.app/?username=jerungpyro&theme=darkhub&no-frame=true&column=7&margin-w=6&margin-h=6" alt="GitHub achievement trophies for jerungpyro">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=jerungpyro&bg_color=0B1D2A&color=A8DADC&line=FF6B35&point=FFD166&area=true&area_color=1E5F74&hide_border=true&title_color=FF6B35&custom_title=Contribution%20Activity" alt="Contribution activity graph for jerungpyro over the last month">
 
 </div>
 ```
@@ -818,7 +841,26 @@ Confirm each, in order, and write down the evidence:
 
 - [ ] **Step 3: Preview the README as GitHub will render it**
 
-Push to a scratch branch or paste into any GitHub markdown preview and confirm: the two-column stats table does not overflow, the `<details>` block is collapsed by default, and the `▸` / `▾` markers render as literal characters.
+Render it through GitHub's own markdown endpoint rather than guessing, then screenshot it:
+
+```bash
+python -c "
+import urllib.request as u, json, pathlib
+md = pathlib.Path('README.md').read_text(encoding='utf-8')
+req = u.Request('https://api.github.com/markdown',
+  data=json.dumps({'text': md, 'mode': 'gfm', 'context': 'jerungpyro/jerungpyro'}).encode(),
+  headers={'Content-Type':'application/json','User-Agent':'readme-preview'})
+print(u.urlopen(req, timeout=40).read().decode('utf-8')[:400])
+"
+```
+
+**Three layout bugs this caught that no structural check could.** They are already fixed in the content above; this note records why it is written that way, so nobody "tidies" it back:
+
+1. **Badges must be on one physical line.** With each badge markdown on its own line, GFM stacked them vertically into a ragged column instead of a centred row.
+2. **No `---` immediately before a `##`.** GitHub already draws a bottom border on every `h2`; an explicit rule above it renders as two parallel lines about 40px apart. The separators before `<details>` and before the snake block stay, because no heading follows them.
+3. **No `▾` glyph in `<summary>`.** GitHub renders its own disclosure triangle, so the literal character showed up as a second, redundant marker. Dropping it does not weaken the "never convey by colour alone" rule — the native disclosure widget is a real semantic control, unlike the `▸` in the plain headings, which must stay.
+
+Then confirm: the `<details>` block is collapsed at rest, the streak card shows its numbers (not an empty frame), and the `▸` markers render as literal characters.
 
 - [ ] **Step 4: Commit any fixes**
 
