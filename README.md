@@ -14,13 +14,13 @@
 
 ## ▸ SURFACING NOW
 
-**[CampusResQ](https://github.com/jerungpyro/RESQ)** — campus issue reporting with photo uploads, GPS-tagged reports, role-based access and real-time status tracking.
+**[CampusResQ](https://github.com/jerungpyro/RESQ)** — campus issue reporting with photo uploads, GPS-tagged reports, role-based access and real-time status tracking.<br>
 `Flutter` `Firebase` `Google Maps`
 
-**[FoodTruck Finder](https://github.com/jerungpyro/foodtruck_finder)** — crowdsourced food truck discovery with an admin web panel for submitting, verifying and managing locations live.
+**[FoodTruck Finder](https://github.com/jerungpyro/foodtruck_finder)** — crowdsourced food truck discovery with an admin web panel for submitting, verifying and managing locations live.<br>
 `Flutter` `Firebase` `Cloud`
 
-**[Task Manager](https://github.com/jerungpyro/Task-Manager-Dart-Laravel)** — full-stack task management: Flutter frontend, Laravel backend, web dashboard, priorities and due dates.
+**[Task Manager](https://github.com/jerungpyro/Task-Manager-Dart-Laravel)** — full-stack task management: Flutter frontend, Laravel backend, web dashboard, priorities and due dates.<br>
 `Flutter` `Laravel` `MySQL` `REST`
 
 ## ▸ WHAT I BUILD WITH

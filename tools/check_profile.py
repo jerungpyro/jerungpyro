@@ -178,10 +178,6 @@ def check_links():
     raw = (ROOT / "README.md").read_text(encoding="utf-8")
     urls = sorted(set(re.findall(r"https://[^\s\"')<>]+", raw)))
     for url in urls:
-        # The snake output branch does not exist until the Action first runs.
-        if "output/snake.svg" in url:
-            print(f"SKIP {url} (populated by the first Action run)")
-            continue
         req = urllib.request.Request(url, headers={"User-Agent": "profile-check"})
         try:
             with urllib.request.urlopen(req, timeout=30) as resp:
@@ -195,6 +191,8 @@ def check_links():
         # only a 404 would tell us otherwise, and it never returns one.
         if code == 999 and "linkedin.com" in url:
             print(f"OK   {url} -> HTTP 999 (LinkedIn anti-bot, expected)")
+        elif code == 404 and "output/snake.svg" in url:
+            fail(f"{url} -> HTTP 404; run the 'generate snake' Action to populate it")
         elif code >= 400:
             fail(f"{url} -> HTTP {code}")
         else:
