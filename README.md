@@ -66,6 +66,6 @@
 
 <br><br>
 
-<sub>jerung + pyro — shark and fire</sub>
+<sub>jerungpyro brr</sub>
 
 </div>
