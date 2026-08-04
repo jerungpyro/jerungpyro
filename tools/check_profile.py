@@ -191,7 +191,11 @@ def check_links():
         except Exception as exc:  # noqa: BLE001 - report and continue
             fail(f"{url} -> {type(exc).__name__}: {exc}")
             continue
-        if code >= 400:
+        # LinkedIn answers every non-browser request with 999. The URL is fine;
+        # only a 404 would tell us otherwise, and it never returns one.
+        if code == 999 and "linkedin.com" in url:
+            print(f"OK   {url} -> HTTP 999 (LinkedIn anti-bot, expected)")
+        elif code >= 400:
             fail(f"{url} -> HTTP {code}")
         else:
             print(f"OK   {url} -> HTTP {code}")
